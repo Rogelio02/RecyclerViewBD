@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nocontrol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Control:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/textnocontrol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="1234567890"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/textNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Carlos"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/appaterno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apellido Paterno:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/textAppaterno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Avendaño"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/apmaterno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apellido Materno:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/textApmaterno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Castellanos"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/grupo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grupo:"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/textgrupo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="12"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/idImagen"
+            android:layout_marginTop="11dp"
+            android:background="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagebasura"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="EliminarAlumno"
+        android:src="@android:drawable/ic_menu_delete" />
+
+    <ImageView
+        android:id="@+id/imageedit"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="ActualizarAlumno"
+        android:src="@android:drawable/ic_menu_edit" />
+
+    </RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registro">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/txtnocontrol"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginRight="116dp"
+            android:hint="No. control:"
+            android:inputType="number"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/textNombre"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="103dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginRight="116dp"
+            android:hint="Nombre:"
+            android:inputType="text"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/txtappaterno"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="165dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginRight="116dp"
+            android:hint="Apellido Paterno:"
+            android:inputType="text"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/textApmaterno"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="232dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginRight="116dp"
+            android:hint="Apellido Materno:"
+            android:inputType="text"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/textgrupo"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="301dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginRight="116dp"
+            android:hint="Grupo:"
+            android:inputType="text"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:id="@+id/registrar"
+            android:layout_width="115dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="399dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginRight="64dp"
+            android:background="@drawable/marca"
+            android:onClick="dialog"
+            android:text="Guardar " />
+
+        <Button
+            android:id="@+id/btnatras"
+            android:layout_width="115dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="396dp"
+            android:layout_marginEnd="251dp"
+            android:layout_marginRight="251dp"
+            android:background="@drawable/archivo"
+            android:onClick="dialogcancelar"
+            android:text="Cancelar " />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
